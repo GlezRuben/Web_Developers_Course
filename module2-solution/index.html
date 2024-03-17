@@ -1,46 +1,62 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Solution for Module 2</title>
-  </head>
-  <style>
-    h1 {
-      margin-bottom: 15px
-    }
+    <head>
+        <meta charset="urf-8">
+        <title>Solution for Module 2</title>
+        <style>
+            h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                margin: 30px;
+            }
 
-    p {
-      border: 1px solid black;
-      margin-bottom:15px;
-    }
+            p {
+                border: 1px solid black;
+                margin: 15px;
+                background-color: #BDC3C7;
+                font-family: Arial, Helvetica, sans-serif;
+            }
 
-    #p1 {
-      backround-color: #A52424
-      width: 300px;
-      height: 300px;
-    }
+            .row {
+                width: 100%;
+            }
 
-    #p2 {
-      backround-color: #DEB887;
-      wigth: 50px;
-      height: 50px;
-    }
+            /***** Desktop view *****/
+            @media (min-width: 992px) {
+                #p1 {
+                    width: 33.33%;
+                } 
 
-    @media (min-width: 1200px) {
-      #p1 {
-        width: 80%;
-      }
-      #p2 {
-        width: 150px;
-        height: 150px;
-      }
-    }
+                #p2 {
+                    width: 33.33%;
+                } 
 
-    
-  </style>
-  
-  <body>
-     
-  </body>
+                #p3 {
+                    width: 33.33%;
+                } 
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Our Menu</h1>
+        <div class="row">
+            <div>
+                <p id="p1" class="col">A type of bird kept on a farm for its eggs or its meat, or the meat 
+                    of this bird that is cooked and eaten: A male chicken is called a 
+                    cock and a female chicken is called a hen.</p>
+            </div>
+            <div>
+                <p id="p2" class="col">Is the flesh of an adult domestic bovine (such as a steer or cow) 
+                    used as food.</p>
+            </div>
+            <div>
+                <p id="p3">A Japanese dish consisting of small balls or rolls of vinegar-flavored 
+                    cold cooked rice served with a garnish of raw fish, vegetables, or egg.</p>
+            </div>
+        </div>
+        
+
+        
+    </body>
 </html>
