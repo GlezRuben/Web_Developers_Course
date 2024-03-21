@@ -5,17 +5,49 @@
         <meta charset="urf-8">
         <title>Solution for Module 2</title>
         <style>
+            * {
+                box-sizing: border-box;
+            }
             h1 {
                 font-family: Arial, Helvetica, sans-serif;
                 text-align: center;
-                margin: 30px;
+                margin: 20px;
+            }
+
+            div#container {
+                background-color: #BDC3C7;
+                margin: 5px;
+                border: 2px solid black;
+                padding: 5px;
             }
 
             p {
-                border: 1px solid black;
-                margin: 15px;
-                background-color: #BDC3C7;
+                border: 2px solid black;
                 font-family: Arial, Helvetica, sans-serif;
+                width: 100px;
+                text-align: center;
+            }
+
+            #p1 {
+                background-color: #FFA07A;
+                position: relative;
+                top: 0px;
+                right: 0px;
+            }
+
+            #p2 {
+                background-color: #CD6155;
+                position: relative;
+                top: 0px;
+                left: 0px;
+                color: white;
+            }
+
+            #p3 {
+                background-color: #F9E79F ;
+                position: relative;
+                top: 0px;
+                right: 0px;
             }
 
             .row {
@@ -24,35 +56,60 @@
 
             /***** Desktop view *****/
             @media (min-width: 992px) {
-                #p1 {
-                    width: 33.33%;
-                } 
+                .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6,
+                .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+                    float: left;
+                    border: 1px;
+                }
+                    .col-lg-1 {
+                        width: 100%;
+                    }
+                    .col-lg-2 {
+                        width: 50%;
+                    }
+                    .col-lg-3 {
+                        width: 32.3%;
+                    }
+                }
 
-                #p2 {
-                    width: 33.33%;
-                } 
-
-                #p3 {
-                    width: 33.33%;
-                } 
-            }
+                @media (min-width: 768px) and (max-width: 991px) {
+                .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6,
+                .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+                    float: left;
+                    border: 1px;
+                }
+                    .col-md-1 {
+                        width: 100%;
+                    }
+                    .col-md-2 {
+                        width: 48%;
+                    }
+                    .col-md-3 {
+                        width: 33.33%;
+                    }
+                }
         </style>
     </head>
     <body>
         <h1>Our Menu</h1>
         <div class="row">
-            <div>
-                <p id="p1" class="col">A type of bird kept on a farm for its eggs or its meat, or the meat 
+            <div id="container" class="col-lg-3 col-md-2">
+                <p id="p1">Chicken</p>
+                A type of bird kept on a farm for its eggs or its meat, or the meat 
                     of this bird that is cooked and eaten: A male chicken is called a 
-                    cock and a female chicken is called a hen.</p>
+                    cock and a female chicken is called a hen.
             </div>
-            <div>
-                <p id="p2" class="col">Is the flesh of an adult domestic bovine (such as a steer or cow) 
-                    used as food.</p>
+
+            <div id="container" class="col-lg-3 col-md-2">
+                <p id="p2">Beef</p>
+                Is the flesh of an adult domestic bovine (such as a steer or cow) 
+                    used as food.
             </div>
-            <div>
-                <p id="p3">A Japanese dish consisting of small balls or rolls of vinegar-flavored 
-                    cold cooked rice served with a garnish of raw fish, vegetables, or egg.</p>
+
+            <div id="container" class="col-lg-3 col-md-1">
+                <p id="p3">Sushi</p>
+                A Japanese dish consisting of small balls or rolls of vinegar-flavored 
+                    cold cooked rice served with a garnish of raw fish, vegetables, or egg.
             </div>
         </div>
         
